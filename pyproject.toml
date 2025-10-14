@@ -3,10 +3,14 @@ name = "parameter-isolation-continual-learning-pytorch"
 version = "0.1.0"
 description = "Reproducible research code for Parameter Isolation Continual Learning in PyTorch"
 authors = ["Fatemerjn <you@example.com>"]
+packages = [{ include = "gs_lora", from = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 torch = "*"
+torchvision = "*"
+numpy = "*"
+tqdm = "*"
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0"
