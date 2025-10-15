@@ -9,7 +9,7 @@ from typing import List
 import torch.nn as nn
 import torchvision.models as models
 
-from .lora import setup_lora_training
+from ..lora import setup_lora_training
 
 
 class MultiHeadLoRAModel(nn.Module):

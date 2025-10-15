@@ -10,13 +10,8 @@ from .training.unlearning import (
     evaluate,
     perform_unlearning,
     run_demo,
-    main as unlearning_main,
 )
-
-
-def main() -> None:
-    unlearning_main()
-
+from .cli.unlearning import main
 
 __all__ = [
     "ExperienceReplay",

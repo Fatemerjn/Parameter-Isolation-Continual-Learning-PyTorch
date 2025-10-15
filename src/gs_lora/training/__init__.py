@@ -1,5 +1,5 @@
 """
-Training utilities for Gradient-Sparse LoRA experiments.
+Training loops for continual learning and unlearning experiments.
 """
 
 from .continual import ContinualLearningConfig, evaluate as evaluate_continual, run_experiment, main as continual_main

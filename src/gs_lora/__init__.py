@@ -2,16 +2,20 @@
 Gradient-Sparse LoRA toolkit.
 """
 
-from .datasets import SplitCIFAR100, SplitTask, get_cifar100_dataloaders
-from .lora import (
+from .data.cifar100 import SplitCIFAR100, SplitTask, get_cifar100_dataloaders
+from .lora.adapters import (
     LoRALinear,
     apply_gradient_mask,
     get_gradient_sparse_mask,
     inject_lora_to_model,
     setup_lora_training,
 )
-from .models import MultiHeadLoRAModel, MultiHeadResNet
-from .training.continual import ContinualLearningConfig, evaluate as evaluate_continual, run_experiment
+from .models.resnet import MultiHeadLoRAModel, MultiHeadResNet
+from .training.continual import (
+    ContinualLearningConfig,
+    evaluate as evaluate_continual,
+    run_experiment,
+)
 from .training.unlearning import (
     ExperienceReplay,
     UnlearningConfig,
